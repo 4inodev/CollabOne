@@ -26,8 +26,8 @@ public class TasksActivity2 extends AppCompatActivity {
         });
 
 
-        String message = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
-        quitButton.setText(message);
+        String text = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
+        quitButton.setText(text);
 
     }
 }
