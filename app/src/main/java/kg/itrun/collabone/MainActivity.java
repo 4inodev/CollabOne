@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "message";
 
-    Button tasksButton;
+    Button myButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        tasksButton = findViewById(R.id.expenses1);
-        tasksButton.setOnClickListener(new View.OnClickListener() {
+        myButton = findViewById(R.id.expenses1);
+        myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(MainActivity.this,TasksActivity2.class);
@@ -30,5 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         // another comment
         //sdasdadd
+        //my comment
     }
 }
