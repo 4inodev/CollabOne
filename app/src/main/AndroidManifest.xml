@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CollabOne">
         <activity android:name=".Rashid"></activity>
+        <activity android:name=".FaraActivity"></activity>
         <activity android:name=".TasksActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
