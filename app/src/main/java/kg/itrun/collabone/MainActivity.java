@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "message";
 
-    Button button;
+    Button myButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +18,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        button = findViewById(R.id.expenses1);
-        button.setOnClickListener(new View.OnClickListener() {
+        myButton = findViewById(R.id.expenses1);
+        myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent butImtent = new Intent(MainActivity.this,TasksActivity2.class);
                 butImtent.putExtra(EXTRA_MESSAGE, "Hello test");
+                butImtent.putExtra("sdasdasd", "rssdasdat");
                 startActivity(butImtent);
             }
         });
         //sdasdadd
+        //my comment
     }
 }
