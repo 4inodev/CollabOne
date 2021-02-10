@@ -10,15 +10,15 @@ import android.widget.Toast;
 
 public class TasksActivity2 extends AppCompatActivity {
 
-    Button exitButton;
+    Button quitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tasks2);
 
-        exitButton = findViewById(R.id.exit);
-        exitButton.setOnClickListener(new View.OnClickListener() {
+        quitButton = findViewById(R.id.exit);
+        quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -26,8 +26,8 @@ public class TasksActivity2 extends AppCompatActivity {
         });
 
 
-        String message = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
-        exitButton.setText(message);
+        String text = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
+        quitButton.setText(text);
 
     }
 }
