@@ -22,12 +22,13 @@ public class MainActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent butImtent = new Intent(MainActivity.this,TasksActivity2.class);
-                butImtent.putExtra(EXTRA_MESSAGE, "Hello test");
-                butImtent.putExtra("sdasdasd", "rssdasdat");
-                startActivity(butImtent);
+                Intent myIntent = new Intent(MainActivity.this,TasksActivity2.class);
+                myIntent.putExtra(EXTRA_MESSAGE, "Hello test");
+                startActivity(myIntent);
             }
         });
+
+        // another comment
         //sdasdadd
         //my comment
     }
